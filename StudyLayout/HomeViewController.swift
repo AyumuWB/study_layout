@@ -12,9 +12,8 @@ class HomeViewController: UIViewController, TransitionButtonCustomViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 
+        // デリゲート呼び出し
         customView.delegate = self
-
     }
     
     /// 画面遷移処理
