@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             //Windowをインスタンス化
             window = UIWindow(windowScene: windowScene)
             //rootViewControllerにStoryboardをHomeViewに指定して初期ビューコントローラーをインスタンス化
-            window?.rootViewController = UIStoryboard(name: "HomeViewController", bundle: nil).instantiateInitialViewController()
+            window?.rootViewController = UIStoryboard(name: "HomeTableView", bundle: nil).instantiateInitialViewController()
             //ウィンドウ表示を実行
             window?.makeKeyAndVisible()
         }
