@@ -21,6 +21,8 @@
 		A5ED98B42B566878008EE71F /* HomeTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5ED98B32B566878008EE71F /* HomeTableView.storyboard */; };
 		A5ED98BF2B591DF7008EE71F /* HomeCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED98BD2B591DF7008EE71F /* HomeCustomTableViewCell.swift */; };
 		A5ED98C02B591DF7008EE71F /* HomeCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5ED98BE2B591DF7008EE71F /* HomeCustomTableViewCell.xib */; };
+		A5ED98C22B639703008EE71F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED98C12B639703008EE71F /* UserDefaults.swift */; };
+		A5ED98C42B639717008EE71F /* UserDefaults.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5ED98C32B639717008EE71F /* UserDefaults.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		A5ED98B32B566878008EE71F /* HomeTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTableView.storyboard; sourceTree = "<group>"; };
 		A5ED98BD2B591DF7008EE71F /* HomeCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomTableViewCell.swift; sourceTree = "<group>"; };
 		A5ED98BE2B591DF7008EE71F /* HomeCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCustomTableViewCell.xib; sourceTree = "<group>"; };
+		A5ED98C12B639703008EE71F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		A5ED98C32B639717008EE71F /* UserDefaults.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDefaults.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				A556B9C62B4F8CFC004B7299 /* NexViewController.storyboard */,
 				A5ED98B12B56685B008EE71F /* HomeTableView.swift */,
 				A5ED98B32B566878008EE71F /* HomeTableView.storyboard */,
+				A5ED98C12B639703008EE71F /* UserDefaults.swift */,
+				A5ED98C32B639717008EE71F /* UserDefaults.storyboard */,
 			);
 			path = StudyLayout;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 				A556B9BE2B4E70ED004B7299 /* HomeViewController.storyboard in Resources */,
 				A556B9962B4E6AD1004B7299 /* LaunchScreen.storyboard in Resources */,
 				A556B9932B4E6AD1004B7299 /* Assets.xcassets in Resources */,
+				A5ED98C42B639717008EE71F /* UserDefaults.storyboard in Resources */,
 				A5ED98C02B591DF7008EE71F /* HomeCustomTableViewCell.xib in Resources */,
 				A5ED98B42B566878008EE71F /* HomeTableView.storyboard in Resources */,
 			);
@@ -273,6 +280,7 @@
 				A556B9C32B4E7D06004B7299 /* TransitionButtonCustomView.swift in Sources */,
 				A556B9C52B4F8CEC004B7299 /* NexViewController.swift in Sources */,
 				A5ED98BF2B591DF7008EE71F /* HomeCustomTableViewCell.swift in Sources */,
+				A5ED98C22B639703008EE71F /* UserDefaults.swift in Sources */,
 				A556B9BC2B4E70DE004B7299 /* HomeViewController.swift in Sources */,
 				A556B98A2B4E6ACE004B7299 /* AppDelegate.swift in Sources */,
 				A556B98C2B4E6ACE004B7299 /* SceneDelegate.swift in Sources */,
