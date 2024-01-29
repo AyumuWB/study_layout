@@ -26,7 +26,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="登録"/>
                                 <connections>
-                                    <action selector="Registration:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PnQ-U2-8v2"/>
+                                    <action selector="keepRegistration:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="sCF-Db-Ffz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-fn-a0q">
@@ -41,7 +41,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="抽出"/>
                                 <connections>
-                                    <action selector="registrationExtraction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SBy-L7-gGS"/>
+                                    <action selector="showRegistrationExtraction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XN2-hn-fiK"/>
                                 </connections>
                             </button>
                         </subviews>
