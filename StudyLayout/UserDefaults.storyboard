@@ -16,40 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7j-n7-5EE">
-                                <rect key="frame" x="64" y="130" width="265" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7j-n7-5EE">
+                                <rect key="frame" x="64" y="114" width="265" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phr-W5-ssQ">
-                                <rect key="frame" x="165" y="181" width="59" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phr-W5-ssQ">
+                                <rect key="frame" x="167" y="238" width="59" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="登録"/>
                                 <connections>
                                     <action selector="Registration:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PnQ-U2-8v2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7G-wr-PRl">
-                                <rect key="frame" x="165" y="372" width="59" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="抽出"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-fn-a0q">
-                                <rect key="frame" x="150" y="308" width="89" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC3-fn-a0q">
+                                <rect key="frame" x="152" y="357" width="89" height="0.0"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7G-wr-PRl">
+                                <rect key="frame" x="167" y="464" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="抽出"/>
+                                <connections>
+                                    <action selector="registrationExtraction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SBy-L7-gGS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x7j-n7-5EE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="64" id="0VW-xK-VyV"/>
+                            <constraint firstItem="r7G-wr-PRl" firstAttribute="top" secondItem="AC3-fn-a0q" secondAttribute="bottom" constant="107" id="1pq-Vp-3iQ"/>
+                            <constraint firstItem="x7j-n7-5EE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="55" id="8Wk-c1-TGx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="phr-W5-ssQ" secondAttribute="trailing" constant="167" id="9es-Wr-Ww1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AC3-fn-a0q" secondAttribute="trailing" constant="152" id="C6e-hL-UOk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="x7j-n7-5EE" secondAttribute="trailing" constant="64" id="Qja-oS-FJU"/>
+                            <constraint firstItem="phr-W5-ssQ" firstAttribute="top" secondItem="x7j-n7-5EE" secondAttribute="bottom" constant="90" id="Wdy-7q-qlR"/>
+                            <constraint firstItem="phr-W5-ssQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="167" id="YNe-sY-XKy"/>
+                            <constraint firstItem="AC3-fn-a0q" firstAttribute="top" secondItem="phr-W5-ssQ" secondAttribute="bottom" constant="84" id="cu9-zE-C3K"/>
+                            <constraint firstItem="AC3-fn-a0q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="152" id="lEw-Ie-QKc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="r7G-wr-PRl" secondAttribute="trailing" constant="167" id="vWg-5x-BYV"/>
+                            <constraint firstItem="r7G-wr-PRl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="167" id="ztf-bO-pnf"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="Label" destination="AC3-fn-a0q" id="jTj-cl-bdj"/>
                         <outlet property="textField" destination="x7j-n7-5EE" id="2cO-80-TKQ"/>
                     </connections>
                 </viewController>
