@@ -17,14 +17,14 @@ class UserDedaults:UIViewController{
     }
     
     /// textFieldの入力値を保存
-    @IBAction func Registration(_ sender: Any) {
+    @IBAction func  keepRegistration(_ sender: Any) {
         let textFieldString = textField.text!
         
         userDefaults.set(textFieldString, forKey: "greetingMessage")
     }
     
     /// 保存した入力値を抽出
-    @IBAction func registrationExtraction(_ sender: Any) {
+    @IBAction func showRegistrationExtraction(_ sender: Any) {
         if let savedString = UserDefaults.standard.string(forKey: "greetingMessage") {
             Label.text = savedString
         }
