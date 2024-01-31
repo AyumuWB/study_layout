@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FBF67F5F4F42A30388B1CFD /* Pods_StudyLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA24A4FAE809598E3B95909 /* Pods_StudyLayout.framework */; };
 		A556B98A2B4E6ACE004B7299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9892B4E6ACE004B7299 /* AppDelegate.swift */; };
 		A556B98C2B4E6ACE004B7299 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B98B2B4E6ACE004B7299 /* SceneDelegate.swift */; };
 		A556B9932B4E6AD1004B7299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A556B9922B4E6AD1004B7299 /* Assets.xcassets */; };
@@ -17,12 +18,15 @@
 		A556B9C32B4E7D06004B7299 /* TransitionButtonCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9C22B4E7D06004B7299 /* TransitionButtonCustomView.swift */; };
 		A556B9C52B4F8CEC004B7299 /* NexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9C42B4F8CEC004B7299 /* NexViewController.swift */; };
 		A556B9C72B4F8CFC004B7299 /* NexViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A556B9C62B4F8CFC004B7299 /* NexViewController.storyboard */; };
+		A5AEE2BE2B69E1FF00B5F6C6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A5AEE2BD2B69E1FF00B5F6C6 /* Podfile */; };
 		A5ED98B22B56685B008EE71F /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED98B12B56685B008EE71F /* HomeTableView.swift */; };
 		A5ED98B42B566878008EE71F /* HomeTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5ED98B32B566878008EE71F /* HomeTableView.storyboard */; };
 		A5ED98BF2B591DF7008EE71F /* HomeCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED98BD2B591DF7008EE71F /* HomeCustomTableViewCell.swift */; };
 		A5ED98C02B591DF7008EE71F /* HomeCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5ED98BE2B591DF7008EE71F /* HomeCustomTableViewCell.xib */; };
 		A5ED98C22B639703008EE71F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED98C12B639703008EE71F /* UserDefaults.swift */; };
 		A5ED98C42B639717008EE71F /* UserDefaults.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5ED98C32B639717008EE71F /* UserDefaults.storyboard */; };
+		A5ED98C82B68C20D008EE71F /* weatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED98C72B68C20D008EE71F /* weatherViewController.swift */; };
+		A5ED98CA2B68C23B008EE71F /* weatherViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5ED98C92B68C23B008EE71F /* weatherViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,26 +47,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A556B9862B4E6ACE004B7299 /* StudyLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		758E48DC12083A77CF8658EE /* Pods-StudyLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyLayout.debug.xcconfig"; path = "Target Support Files/Pods-StudyLayout/Pods-StudyLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		808C9EC87FD1985E76EB0FC8 /* Pods-StudyLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyLayout.release.xcconfig"; path = "Target Support Files/Pods-StudyLayout/Pods-StudyLayout.release.xcconfig"; sourceTree = "<group>"; };
 		A556B9892B4E6ACE004B7299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A556B98B2B4E6ACE004B7299 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A556B9922B4E6AD1004B7299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A556B9952B4E6AD1004B7299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A556B9972B4E6AD1004B7299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A556B99C2B4E6AD1004B7299 /* StudyLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A556B9A62B4E6AD1004B7299 /* StudyLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A556B9BB2B4E70DE004B7299 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A556B9BD2B4E70ED004B7299 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		A556B9C02B4E7C34004B7299 /* TransitionButtonCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionButtonCustomView.xib; sourceTree = "<group>"; };
 		A556B9C22B4E7D06004B7299 /* TransitionButtonCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionButtonCustomView.swift; sourceTree = "<group>"; };
 		A556B9C42B4F8CEC004B7299 /* NexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexViewController.swift; sourceTree = "<group>"; };
 		A556B9C62B4F8CFC004B7299 /* NexViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NexViewController.storyboard; sourceTree = "<group>"; };
+		A5AEE2BD2B69E1FF00B5F6C6 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5AEE2C22B69EABB00B5F6C6 /* StudyLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AEE2C32B69EABB00B5F6C6 /* StudyLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AEE2C42B69EABB00B5F6C6 /* StudyLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5ED98B12B56685B008EE71F /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 		A5ED98B32B566878008EE71F /* HomeTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTableView.storyboard; sourceTree = "<group>"; };
 		A5ED98BD2B591DF7008EE71F /* HomeCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomTableViewCell.swift; sourceTree = "<group>"; };
 		A5ED98BE2B591DF7008EE71F /* HomeCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCustomTableViewCell.xib; sourceTree = "<group>"; };
 		A5ED98C12B639703008EE71F /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		A5ED98C32B639717008EE71F /* UserDefaults.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDefaults.storyboard; sourceTree = "<group>"; };
+		A5ED98C72B68C20D008EE71F /* weatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherViewController.swift; sourceTree = "<group>"; };
+		A5ED98C92B68C23B008EE71F /* weatherViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = weatherViewController.storyboard; sourceTree = "<group>"; };
+		CAA24A4FAE809598E3B95909 /* Pods_StudyLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBF67F5F4F42A30388B1CFD /* Pods_StudyLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,22 +101,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91F7D44CAA855BB2E57F1CA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				758E48DC12083A77CF8658EE /* Pods-StudyLayout.debug.xcconfig */,
+				808C9EC87FD1985E76EB0FC8 /* Pods-StudyLayout.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A556B97D2B4E6ACE004B7299 = {
 			isa = PBXGroup;
 			children = (
+				A5AEE2BD2B69E1FF00B5F6C6 /* Podfile */,
 				A556B9882B4E6ACE004B7299 /* StudyLayout */,
-				A556B9872B4E6ACE004B7299 /* Products */,
+				91F7D44CAA855BB2E57F1CA0 /* Pods */,
+				A6150A56F0B0D298576E2D4E /* Frameworks */,
+				A5AEE2C22B69EABB00B5F6C6 /* StudyLayout.app */,
+				A5AEE2C32B69EABB00B5F6C6 /* StudyLayoutTests.xctest */,
+				A5AEE2C42B69EABB00B5F6C6 /* StudyLayoutUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		A556B9872B4E6ACE004B7299 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A556B9862B4E6ACE004B7299 /* StudyLayout.app */,
-				A556B99C2B4E6AD1004B7299 /* StudyLayoutTests.xctest */,
-				A556B9A62B4E6AD1004B7299 /* StudyLayoutUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		A556B9882B4E6ACE004B7299 /* StudyLayout */ = {
@@ -125,6 +140,8 @@
 				A5ED98B32B566878008EE71F /* HomeTableView.storyboard */,
 				A5ED98C12B639703008EE71F /* UserDefaults.swift */,
 				A5ED98C32B639717008EE71F /* UserDefaults.storyboard */,
+				A5ED98C72B68C20D008EE71F /* weatherViewController.swift */,
+				A5ED98C92B68C23B008EE71F /* weatherViewController.storyboard */,
 			);
 			path = StudyLayout;
 			sourceTree = "<group>";
@@ -140,6 +157,14 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		A6150A56F0B0D298576E2D4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAA24A4FAE809598E3B95909 /* Pods_StudyLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A556B9B02B4E6AD1004B7299 /* Build configuration list for PBXNativeTarget "StudyLayout" */;
 			buildPhases = (
+				8F14B4F94F712738DCB86200 /* [CP] Check Pods Manifest.lock */,
 				A556B9822B4E6ACE004B7299 /* Sources */,
 				A556B9832B4E6ACE004B7299 /* Frameworks */,
 				A556B9842B4E6ACE004B7299 /* Resources */,
+				78693A7D219C136C6F7EA098 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,7 +184,7 @@
 			);
 			name = StudyLayout;
 			productName = StudyLayout;
-			productReference = A556B9862B4E6ACE004B7299 /* StudyLayout.app */;
+			productReference = A5AEE2C22B69EABB00B5F6C6 /* StudyLayout.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A556B99B2B4E6AD1004B7299 /* StudyLayoutTests */ = {
@@ -175,7 +202,7 @@
 			);
 			name = StudyLayoutTests;
 			productName = StudyLayoutTests;
-			productReference = A556B99C2B4E6AD1004B7299 /* StudyLayoutTests.xctest */;
+			productReference = A5AEE2C32B69EABB00B5F6C6 /* StudyLayoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A556B9A52B4E6AD1004B7299 /* StudyLayoutUITests */ = {
@@ -193,7 +220,7 @@
 			);
 			name = StudyLayoutUITests;
 			productName = StudyLayoutUITests;
-			productReference = A556B9A62B4E6AD1004B7299 /* StudyLayoutUITests.xctest */;
+			productReference = A5AEE2C42B69EABB00B5F6C6 /* StudyLayoutUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +255,7 @@
 				Base,
 			);
 			mainGroup = A556B97D2B4E6ACE004B7299;
-			productRefGroup = A556B9872B4E6ACE004B7299 /* Products */;
+			productRefGroup = A556B97D2B4E6ACE004B7299;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -244,6 +271,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5ED98CA2B68C23B008EE71F /* weatherViewController.storyboard in Resources */,
+				A5AEE2BE2B69E1FF00B5F6C6 /* Podfile in Resources */,
 				A556B9C12B4E7C34004B7299 /* TransitionButtonCustomView.xib in Resources */,
 				A556B9C72B4F8CFC004B7299 /* NexViewController.storyboard in Resources */,
 				A556B9BE2B4E70ED004B7299 /* HomeViewController.storyboard in Resources */,
@@ -271,6 +300,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78693A7D219C136C6F7EA098 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyLayout/Pods-StudyLayout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StudyLayout/Pods-StudyLayout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StudyLayout/Pods-StudyLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F14B4F94F712738DCB86200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StudyLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A556B9822B4E6ACE004B7299 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +355,7 @@
 				A556B9BC2B4E70DE004B7299 /* HomeViewController.swift in Sources */,
 				A556B98A2B4E6ACE004B7299 /* AppDelegate.swift in Sources */,
 				A556B98C2B4E6ACE004B7299 /* SceneDelegate.swift in Sources */,
+				A5ED98C82B68C20D008EE71F /* weatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +516,7 @@
 		};
 		A556B9B12B4E6AD1004B7299 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758E48DC12083A77CF8658EE /* Pods-StudyLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,6 +543,7 @@
 		};
 		A556B9B22B4E6AD1004B7299 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808C9EC87FD1985E76EB0FC8 /* Pods-StudyLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
