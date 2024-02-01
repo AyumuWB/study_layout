@@ -9,6 +9,9 @@ import UIKit
 import SwiftyJSON
 
 class weatherViewController: UIViewController {
+    @IBOutlet weak var weatherTitle: UILabel!
+    @IBOutlet weak var weatherView: UILabel!
+    
     // APIのベースURLとAPIキーを設定
     let urlBase = "https://api.openweathermap.org/data/2.5/weather"
     let apiKey = ""
@@ -45,6 +48,11 @@ class weatherViewController: UIViewController {
                     // 天気情報の取得
                     if let weatherDescription = json["weather"][0]["description"].string {
                         print("天気予報: \(weatherDescription)")
+                        
+                        // viewのクラッシュを防止し、天気情報を表示させる
+                        DispatchQueue.main.async {
+                            self.weatherView.text = weatherDescription
+                        }
                     }
                 } catch {
                     print("jsonError", error)
