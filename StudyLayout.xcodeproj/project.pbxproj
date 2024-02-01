@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		A556B98A2B4E6ACE004B7299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9892B4E6ACE004B7299 /* AppDelegate.swift */; };
 		A556B98C2B4E6ACE004B7299 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B98B2B4E6ACE004B7299 /* SceneDelegate.swift */; };
-		A556B98E2B4E6ACE004B7299 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B98D2B4E6ACE004B7299 /* ViewController.swift */; };
-		A556B9912B4E6ACE004B7299 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A556B98F2B4E6ACE004B7299 /* Main.storyboard */; };
 		A556B9932B4E6AD1004B7299 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A556B9922B4E6AD1004B7299 /* Assets.xcassets */; };
 		A556B9962B4E6AD1004B7299 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A556B9942B4E6AD1004B7299 /* LaunchScreen.storyboard */; };
-		A556B9A12B4E6AD1004B7299 /* StudyLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9A02B4E6AD1004B7299 /* StudyLayoutTests.swift */; };
-		A556B9AB2B4E6AD1004B7299 /* StudyLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9AA2B4E6AD1004B7299 /* StudyLayoutUITests.swift */; };
-		A556B9AD2B4E6AD1004B7299 /* StudyLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9AC2B4E6AD1004B7299 /* StudyLayoutUITestsLaunchTests.swift */; };
+		A556B9BC2B4E70DE004B7299 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9BB2B4E70DE004B7299 /* HomeViewController.swift */; };
+		A556B9BE2B4E70ED004B7299 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A556B9BD2B4E70ED004B7299 /* HomeViewController.storyboard */; };
+		A556B9C12B4E7C34004B7299 /* TransitionButtonCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A556B9C02B4E7C34004B7299 /* TransitionButtonCustomView.xib */; };
+		A556B9C32B4E7D06004B7299 /* TransitionButtonCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9C22B4E7D06004B7299 /* TransitionButtonCustomView.swift */; };
+		A556B9C52B4F8CEC004B7299 /* NexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A556B9C42B4F8CEC004B7299 /* NexViewController.swift */; };
+		A556B9C72B4F8CFC004B7299 /* NexViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A556B9C62B4F8CFC004B7299 /* NexViewController.storyboard */; };
+		A5ED98B22B56685B008EE71F /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED98B12B56685B008EE71F /* HomeTableView.swift */; };
+		A5ED98B42B566878008EE71F /* HomeTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5ED98B32B566878008EE71F /* HomeTableView.storyboard */; };
+		A5ED98BF2B591DF7008EE71F /* HomeCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED98BD2B591DF7008EE71F /* HomeCustomTableViewCell.swift */; };
+		A5ED98C02B591DF7008EE71F /* HomeCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5ED98BE2B591DF7008EE71F /* HomeCustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +44,21 @@
 		A556B9862B4E6ACE004B7299 /* StudyLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A556B9892B4E6ACE004B7299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A556B98B2B4E6ACE004B7299 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A556B98D2B4E6ACE004B7299 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A556B9902B4E6ACE004B7299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A556B9922B4E6AD1004B7299 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A556B9952B4E6AD1004B7299 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A556B9972B4E6AD1004B7299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A556B99C2B4E6AD1004B7299 /* StudyLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A556B9A02B4E6AD1004B7299 /* StudyLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyLayoutTests.swift; sourceTree = "<group>"; };
 		A556B9A62B4E6AD1004B7299 /* StudyLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A556B9AA2B4E6AD1004B7299 /* StudyLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyLayoutUITests.swift; sourceTree = "<group>"; };
-		A556B9AC2B4E6AD1004B7299 /* StudyLayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyLayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A556B9BB2B4E70DE004B7299 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A556B9BD2B4E70ED004B7299 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		A556B9C02B4E7C34004B7299 /* TransitionButtonCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransitionButtonCustomView.xib; sourceTree = "<group>"; };
+		A556B9C22B4E7D06004B7299 /* TransitionButtonCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionButtonCustomView.swift; sourceTree = "<group>"; };
+		A556B9C42B4F8CEC004B7299 /* NexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexViewController.swift; sourceTree = "<group>"; };
+		A556B9C62B4F8CFC004B7299 /* NexViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NexViewController.storyboard; sourceTree = "<group>"; };
+		A5ED98B12B56685B008EE71F /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		A5ED98B32B566878008EE71F /* HomeTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTableView.storyboard; sourceTree = "<group>"; };
+		A5ED98BD2B591DF7008EE71F /* HomeCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomTableViewCell.swift; sourceTree = "<group>"; };
+		A5ED98BE2B591DF7008EE71F /* HomeCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				A556B9882B4E6ACE004B7299 /* StudyLayout */,
-				A556B99F2B4E6AD1004B7299 /* StudyLayoutTests */,
-				A556B9A92B4E6AD1004B7299 /* StudyLayoutUITests */,
 				A556B9872B4E6ACE004B7299 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,32 +107,31 @@
 		A556B9882B4E6ACE004B7299 /* StudyLayout */ = {
 			isa = PBXGroup;
 			children = (
+				A556B9BF2B4E7BE2004B7299 /* CustomView */,
 				A556B9892B4E6ACE004B7299 /* AppDelegate.swift */,
 				A556B98B2B4E6ACE004B7299 /* SceneDelegate.swift */,
-				A556B98D2B4E6ACE004B7299 /* ViewController.swift */,
-				A556B98F2B4E6ACE004B7299 /* Main.storyboard */,
-				A556B9922B4E6AD1004B7299 /* Assets.xcassets */,
 				A556B9942B4E6AD1004B7299 /* LaunchScreen.storyboard */,
+				A556B9922B4E6AD1004B7299 /* Assets.xcassets */,
 				A556B9972B4E6AD1004B7299 /* Info.plist */,
+				A556B9BB2B4E70DE004B7299 /* HomeViewController.swift */,
+				A556B9BD2B4E70ED004B7299 /* HomeViewController.storyboard */,
+				A556B9C42B4F8CEC004B7299 /* NexViewController.swift */,
+				A556B9C62B4F8CFC004B7299 /* NexViewController.storyboard */,
+				A5ED98B12B56685B008EE71F /* HomeTableView.swift */,
+				A5ED98B32B566878008EE71F /* HomeTableView.storyboard */,
 			);
 			path = StudyLayout;
 			sourceTree = "<group>";
 		};
-		A556B99F2B4E6AD1004B7299 /* StudyLayoutTests */ = {
+		A556B9BF2B4E7BE2004B7299 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				A556B9A02B4E6AD1004B7299 /* StudyLayoutTests.swift */,
+				A556B9C02B4E7C34004B7299 /* TransitionButtonCustomView.xib */,
+				A556B9C22B4E7D06004B7299 /* TransitionButtonCustomView.swift */,
+				A5ED98BD2B591DF7008EE71F /* HomeCustomTableViewCell.swift */,
+				A5ED98BE2B591DF7008EE71F /* HomeCustomTableViewCell.xib */,
 			);
-			path = StudyLayoutTests;
-			sourceTree = "<group>";
-		};
-		A556B9A92B4E6AD1004B7299 /* StudyLayoutUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A556B9AA2B4E6AD1004B7299 /* StudyLayoutUITests.swift */,
-				A556B9AC2B4E6AD1004B7299 /* StudyLayoutUITestsLaunchTests.swift */,
-			);
-			path = StudyLayoutUITests;
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +238,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A556B9C12B4E7C34004B7299 /* TransitionButtonCustomView.xib in Resources */,
+				A556B9C72B4F8CFC004B7299 /* NexViewController.storyboard in Resources */,
+				A556B9BE2B4E70ED004B7299 /* HomeViewController.storyboard in Resources */,
 				A556B9962B4E6AD1004B7299 /* LaunchScreen.storyboard in Resources */,
 				A556B9932B4E6AD1004B7299 /* Assets.xcassets in Resources */,
-				A556B9912B4E6ACE004B7299 /* Main.storyboard in Resources */,
+				A5ED98C02B591DF7008EE71F /* HomeCustomTableViewCell.xib in Resources */,
+				A5ED98B42B566878008EE71F /* HomeTableView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A556B98E2B4E6ACE004B7299 /* ViewController.swift in Sources */,
+				A5ED98B22B56685B008EE71F /* HomeTableView.swift in Sources */,
+				A556B9C32B4E7D06004B7299 /* TransitionButtonCustomView.swift in Sources */,
+				A556B9C52B4F8CEC004B7299 /* NexViewController.swift in Sources */,
+				A5ED98BF2B591DF7008EE71F /* HomeCustomTableViewCell.swift in Sources */,
+				A556B9BC2B4E70DE004B7299 /* HomeViewController.swift in Sources */,
 				A556B98A2B4E6ACE004B7299 /* AppDelegate.swift in Sources */,
 				A556B98C2B4E6ACE004B7299 /* SceneDelegate.swift in Sources */,
 			);
@@ -268,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A556B9A12B4E6AD1004B7299 /* StudyLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A556B9AD2B4E6AD1004B7299 /* StudyLayoutUITestsLaunchTests.swift in Sources */,
-				A556B9AB2B4E6AD1004B7299 /* StudyLayoutUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A556B98F2B4E6ACE004B7299 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A556B9902B4E6ACE004B7299 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A556B9942B4E6AD1004B7299 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +445,6 @@
 				INFOPLIST_FILE = StudyLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +471,6 @@
 				INFOPLIST_FILE = StudyLayout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
