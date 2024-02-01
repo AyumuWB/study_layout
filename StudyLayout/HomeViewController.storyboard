@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LRx-AZ-slY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeView-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewControllerID" id="Y6W-OH-hqX" userLabel="HomeView" customClass="HomeViewController" customModule="StudyLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="TransitionButtonCustomViewID" translatesAutoresizingMaskIntoConstraints="NO" id="7ha-qA-FqV" customClass="TransitionButtonCustomView" customModule="StudyLayout" customModuleProvider="target">
+                                <rect key="frame" x="36" y="234" width="321" height="57"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ホーム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1p-0L-GOg">
+                                <rect key="frame" x="36" y="163" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7ha-qA-FqV" secondAttribute="trailing" constant="36" id="5Il-6M-cQ8"/>
+                            <constraint firstItem="7ha-qA-FqV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="6kU-8D-7rs"/>
+                            <constraint firstItem="u1p-0L-GOg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="Isk-Jv-Aox"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="u1p-0L-GOg" secondAttribute="trailing" constant="36" id="Vso-rF-dwR"/>
+                            <constraint firstItem="7ha-qA-FqV" firstAttribute="top" secondItem="u1p-0L-GOg" secondAttribute="bottom" constant="50" id="acY-NV-ssk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7ha-qA-FqV" secondAttribute="bottom" constant="527" id="s4C-PJ-pub"/>
+                            <constraint firstItem="u1p-0L-GOg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="tVn-z5-Asa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jww-Bj-Hi6"/>
+                    <connections>
+                        <outlet property="customView" destination="7ha-qA-FqV" id="3Is-B7-GEA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fcp-eV-omX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LRx-AZ-slY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U6i-Yu-JpB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Xel-oL-dvi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTp-ZE-r2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
