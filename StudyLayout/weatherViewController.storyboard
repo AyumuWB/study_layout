@@ -16,9 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3G1-FF-bc6">
-                                <rect key="frame" x="200" y="406" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nma-I0-XDT" userLabel="タイトル">
+                                <rect key="frame" x="83" y="167" width="227" height="43"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="2Pq-Kc-koF"/>
+                                    <constraint firstAttribute="width" constant="227" id="wMt-ek-ClN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="東京の天気情報" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3G1-FF-bc6">
+                                <rect key="frame" x="97" y="118" width="199" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,11 +36,23 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nma-I0-XDT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="83" id="1w6-Lo-puM"/>
+                            <constraint firstItem="nma-I0-XDT" firstAttribute="top" secondItem="3G1-FF-bc6" secondAttribute="bottom" constant="28" id="3XE-SP-UdW"/>
+                            <constraint firstItem="3G1-FF-bc6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="59" id="EeB-eO-jbu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3G1-FF-bc6" secondAttribute="trailing" constant="97" id="LV0-Hn-Snm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nma-I0-XDT" secondAttribute="trailing" constant="83" id="cfV-mB-yXj"/>
+                            <constraint firstItem="3G1-FF-bc6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="97" id="sr1-kJ-0Kp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="weatherTitle" destination="3G1-FF-bc6" id="aBM-gb-9hf"/>
+                        <outlet property="weatherView" destination="nma-I0-XDT" id="8BS-0j-Ybx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="5"/>
+            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
         </scene>
     </scenes>
     <resources>
