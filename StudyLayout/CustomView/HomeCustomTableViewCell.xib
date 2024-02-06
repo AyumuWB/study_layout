@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="KGk-i7-Jjw" customClass="HomeCustomTableViewCell" customModule="StudyLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a48-yv-FgE">
+                        <rect key="frame" x="139.66666666666666" y="11.666666666666664" width="41" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2az-g0-w48"/>
+                            <constraint firstAttribute="width" constant="41" id="sIL-Nx-geB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftlog" translatesAutoresizingMaskIntoConstraints="NO" id="LTY-5p-Vif">
+                        <rect key="frame" x="12" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="mOG-v7-zUU"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFQ-jB-OLD">
+                        <rect key="frame" x="273" y="13" width="22" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="dHc-94-Mid"/>
+                            <constraint firstAttribute="height" constant="20" id="mU9-nS-0S9"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="yajirushi"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qFQ-jB-OLD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="0KC-O6-gHl"/>
+                    <constraint firstAttribute="trailing" secondItem="qFQ-jB-OLD" secondAttribute="trailing" constant="25" id="5XP-JZ-lyY"/>
+                    <constraint firstItem="a48-yv-FgE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="I9E-Kx-fA5"/>
+                    <constraint firstItem="LTY-5p-Vif" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Jvt-2U-Hz8"/>
+                    <constraint firstItem="LTY-5p-Vif" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="TZM-RQ-yNM"/>
+                    <constraint firstAttribute="bottom" secondItem="qFQ-jB-OLD" secondAttribute="bottom" constant="11" id="cdw-vL-BIN"/>
+                    <constraint firstAttribute="bottom" secondItem="LTY-5p-Vif" secondAttribute="bottom" constant="2" id="gPh-5q-clT"/>
+                    <constraint firstItem="a48-yv-FgE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ggV-Hh-281"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="a48-yv-FgE" id="nij-WY-qsH"/>
+            </connections>
+            <point key="canvasLocation" x="-20" y="1"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="swiftlog" width="1200" height="1200"/>
+        <image name="yajirushi" width="256" height="256"/>
+    </resources>
+</document>
