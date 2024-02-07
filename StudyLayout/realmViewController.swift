@@ -19,8 +19,33 @@ class realmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // データベースの保存内容取得
+        // レルムオブジェクトを取得
         let managementRealm = realm.objects(managementRealm.self)
-        print("🟥全てのデータ\(managementRealm)")
+    }
+    
+    // レルムにフォームデータを保存する
+    @IBAction func addAllFormValueButtonTap(_ sender: Any) {
+        // テキストフィールドの値をレルムに保存する
+        let managementRealm = managementRealm()
+        
+        // 名前入力情報取得、保存
+        if let name = nameForm.text{
+            managementRealm.name = name
+        }
+        
+        // 年齢入力情報取得、保存
+        if let age = ageForm.text{
+            managementRealm.age = Int(age)!
+        }
+        
+        // 性別入力情報取得、保存
+        if let gender = genderForm.text{
+            managementRealm.gender = gender
+        }
+        
+        // データベースにフォームの入力値を保存
+        try! realm.write{
+            realm.add(managementRealm)
+        }
     }
 }
