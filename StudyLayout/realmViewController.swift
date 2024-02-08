@@ -9,6 +9,7 @@ import UIKit
 import RealmSwift
 
 class realmViewController: UIViewController {
+    
     @IBOutlet weak var nameForm: UITextField!
     @IBOutlet weak var ageForm: UITextField!
     @IBOutlet weak var genderForm: UITextField!
