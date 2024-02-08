@@ -20,7 +20,7 @@ class realmViewController: UIViewController {
         super.viewDidLoad()
         
         // レルムオブジェクトを取得
-        let managementRealm = realm.objects(managementRealm.self)
+//        let allRealm = realm.objects(managementRealm.self)
     }
     
     // レルムにフォームデータを保存する
@@ -47,5 +47,24 @@ class realmViewController: UIViewController {
         try! realm.write{
             realm.add(managementRealm)
         }
+    }
+    
+    // レルムに保存されている情報を取得する
+    @IBAction func extractionButtonTap(_ sender: Any) {
+        // 全件ユーザ情報を取得
+        var userInformation = realm.objects(managementRealm.self)
+        
+        // ユーザ情報の数を取得
+        let dbCount = userInformation.count
+        
+        // 入力されたユーザ情報からDBデータを一致させて検索を書ける
+        for _ in 0 ..< dbCount {
+          print("a\(dbCount)")
+            
+            
+        }
+        
+        
+//        print(a[5].name)
     }
 }
