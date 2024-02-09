@@ -12,6 +12,9 @@ class realmViewController: UIViewController {
     @IBOutlet weak var nameForm: UITextField!
     @IBOutlet weak var ageForm: UITextField!
     @IBOutlet weak var genderForm: UITextField!
+    @IBOutlet weak var nameOutput: UILabel!
+    @IBOutlet weak var ageOutput: UILabel!
+    @IBOutlet weak var genderOutput: UILabel!
     
     // データベースの用意としてインスタンス化
     let realm = try! Realm()
@@ -19,8 +22,9 @@ class realmViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // レルムオブジェクトを取得
-//        let allRealm = realm.objects(managementRealm.self)
+        nameOutput.backgroundColor = UIColor(red: 0.7, green: 0.8, blue: 1.0, alpha: 1.0) // 青
+        ageOutput.backgroundColor = UIColor(red: 0.7, green: 0.8, blue: 1.0, alpha: 1.0) // 青
+        genderOutput.backgroundColor = UIColor(red: 0.7, green: 0.8, blue: 1.0, alpha: 1.0) // 青
     }
     
     // レルムにフォームデータを保存する
@@ -51,20 +55,23 @@ class realmViewController: UIViewController {
     
     // レルムに保存されている情報を取得する
     @IBAction func extractionButtonTap(_ sender: Any) {
+        
+        // if文の型エラーを防止するためint型に変更
+        let ageNew = Int(ageForm.text ?? "0")
+        
         // 全件ユーザ情報を取得
-        var userInformation = realm.objects(managementRealm.self)
+        let userInformation = realm.objects(managementRealm.self)
         
         // ユーザ情報の数を取得
         let dbCount = userInformation.count
         
         // 入力されたユーザ情報からDBデータを一致させて検索を書ける
-        for _ in 0 ..< dbCount {
-          print("a\(dbCount)")
-            
-            
+        for i in 0 ..< dbCount {
+            if userInformation[i].name == nameForm.text && userInformation[i].age == ageNew && userInformation[i].gender == genderForm.text {
+                nameOutput.text = userInformation[i].name
+                ageOutput.text = String(userInformation[i].age)
+                genderOutput.text = userInformation[i].gender
+            }
         }
-        
-        
-//        print(a[5].name)
     }
 }
